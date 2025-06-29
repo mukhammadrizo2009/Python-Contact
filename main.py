@@ -1,7 +1,9 @@
 from sys import exit
 from printer import print_menu
 from contact import add_contact, show_all_contact
-
+from contact import search_contact
+from contact import delete_contact
+from contact import update_contact
 
 def main():
     contacts: list[dict] = [
@@ -18,13 +20,11 @@ def main():
         elif choice == '2':
             show_all_contact(contacts)
         elif choice == '3':
-            pass
+            search_contact(contacts)
         elif choice == '4':
-            pass
+            delete_contact(contacts)
         elif choice == '5':
-            pass
-        elif choice == '6':
-            pass
+            update_contact(contacts)
         else:
             exit(0)
 

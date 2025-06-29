@@ -1,3 +1,4 @@
+
 from termcolor import colored
 
 
@@ -18,7 +19,7 @@ def print_menu():
 def print_status(status: str):
     status_data = {
         'error': colored("xatolik yuz berdi", 'red'),
-        'success': colored("muvaffasiyatli bajarildi", 'green'),
+        'success': colored("muvaffaqiyatli bajarildi", 'green'),
     }
 
     print(status_data[status])
